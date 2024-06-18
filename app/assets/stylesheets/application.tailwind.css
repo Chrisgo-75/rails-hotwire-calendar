@@ -1,7 +1,9 @@
+@import "trix/dist/trix.css";
+@import 'actiontext.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import 'actiontext.css';
 
 .trix-button--icon-increase-nesting-level,
 .trix-button--icon-decrease-nesting-level,
