@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'actiontext.css';
+
+.trix-button--icon-increase-nesting-level,
+.trix-button--icon-decrease-nesting-level,
+.trix-button--icon-strike,
+.trix-button--icon-code {
+    display: none;
+}
+
+.trix-button--icon-attach {
+    display: none;
+}
+
+span.trix-button-group--file-tools {
+    display: none;
+}
