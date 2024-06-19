@@ -17,7 +17,8 @@ cp -r /usr/src/cache/node_modules/. /usr/src/app/node_modules/
 RAILS_ENV=development bundle exec rake assets:precompile
 
 # Start the primary process and put it in the background
-bundle exec passenger start &
+#bundle exec passenger start &
+bundle exec puma -C config/puma.rb &
 
 # Start the helper process
 #bundle exec sidekiq -C config/sidekiq.yml
