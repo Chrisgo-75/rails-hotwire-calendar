@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'main/index'
 
+  # Setup Mission Control for the app, we’ll add the route to mount the engine at /jobs in our app.
+  mount MissionControl::Jobs::Engine, at: "/jobs"
 
 
 end

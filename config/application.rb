@@ -18,5 +18,10 @@ module HotwireCal
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Use a real queuing backend for Active Job (and separate queues per environment).
+    config.active_job.queue_adapter = :solid_queue
+    # config.active_job.queue_name_prefix = "hotwire_cal_production"
+
   end
 end
